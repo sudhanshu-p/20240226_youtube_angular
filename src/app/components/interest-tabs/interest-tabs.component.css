@@ -1,0 +1,28 @@
+.trending-topics {
+    background-color: var(--background-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-topic-button {
+    background-color: var(--hover-black);
+    padding: 0 12px;
+    margin: 12px 12px 12px 0;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+.trending-topic-button:hover {
+    background-color: var(--chip-background);
+}
+
+.active-tt-button {
+    background-color: white;
+    color: black;
+}

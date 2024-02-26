@@ -1,13 +1,16 @@
 <!-- This template acts as layout for the webpage.
     Stuff written here is displayed in both of the pages. -->
 
-<nav>
-  <a href="/">Home</a>
-  <a href="/sub">Subscriptions</a>
-</nav>
-
-<app-sidebar />
+<!-- Navigation bar at the top -->
 <app-topbar />
-<app-interest-tabs />
 
-<router-outlet />
+<main>
+  <!-- Navigation bar on the side -->
+  <app-sidebar />
+  <article>
+    <!-- The little tabs of particular tags -->
+    <app-interest-tabs />
+    <!-- This means the content of the page -->
+    <router-outlet />
+  </article>
+</main>
