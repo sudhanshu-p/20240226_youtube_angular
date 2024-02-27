@@ -58,3 +58,22 @@
     font-size: 14px;
     padding-bottom: 0.25rem;
 }
+
+@media only screen and (max-width: 1400px) {
+    .video {
+        flex: 1 0 30%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .video {
+        flex: 1 0 40%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .video {
+        flex: 1 0 80%;
+    }
+}

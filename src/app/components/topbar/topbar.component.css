@@ -213,3 +213,17 @@ header {
 .user-profile small {
     font-size: 12px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 1400px) {
+    .voice-control {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .search-bar {
+        display: none;
+    }
+}
