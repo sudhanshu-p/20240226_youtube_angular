@@ -29,3 +29,12 @@ nav>ul>li>a {
     color: white;
     text-decoration: none;
 }
+
+.li-icon > svg {
+    stroke: white;
+}
+
+.active > svg {
+    fill: white;
+    stroke: none;
+}

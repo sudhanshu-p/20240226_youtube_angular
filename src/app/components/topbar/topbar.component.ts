@@ -13,6 +13,7 @@ export class TopbarComponent {
     name: "Error",
     profileImageUrl: ""
   }
+  
   settingsMenuOpen = false
 
   toggleSettingsMenu () {
