@@ -2,14 +2,14 @@
     Stuff written here is displayed in both of the pages. -->
 
 <!-- Navigation bar at the top -->
-<app-topbar />
+<app-topbar [user]="user" />
 
 <main>
   <!-- Navigation bar on the side -->
   <app-sidebar />
   <article>
     <!-- The little tabs of particular tags -->
-    <app-interest-tabs />
+    <app-interest-tabs [trendingTopics]="trendingTopics" />
     <!-- This means the content of the page -->
     <router-outlet />
   </article>

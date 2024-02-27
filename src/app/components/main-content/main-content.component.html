@@ -1,26 +1,27 @@
 <div class="videos-section">
+    @for (video of videoData; track video) {
     <div class="video">
         <div class="thumbnail">
-            <img src="https://i.ytimg.com/vi/M3ygFVrfR6E/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBk70XfPGYOf3vskmd0FDo-HK3GMg"
-                alt="Falling Sand">
+            <img src="{{video.videoThumbnailUrl}}" alt="Falling Sand">
         </div>
         <div class="video-metadata">
             <div class="creator-pfp">
-                <img src="https://yt3.ggpht.com/fRTh6Q0FUUZ50HFjtiUw_5DeDhQy87dhpUOdLzPySHsZXipNu3lpD4R9oxyKUzXY_DDUVPZB=s68-c-k-c0x00ffffff-no-rj"
-                    alt="The Coding Train">
+                <img src="{{video.channelProfileIconUrl}}" alt="{{video.channel}}">
             </div>
             <div class="video-details">
                 <div class="video-title">
-                    Coding challenge 180: Falling Sand
+                    {{video.title}}
                 </div>
                 <div class="creator-name">
-                    The Coding Train
+                    {{video.channel}}
                 </div>
                 <div class="other-metadata">
-                    <div class="views">4.2B views • </div>
-                    <div class="time">2 weeks ago</div>
+                    <div class="views">{{video.views}} • </div>
+                    <div class="time">{{video.uploadDate}}</div>
                 </div>
             </div>
         </div>
     </div>
+    }
+
 </div>

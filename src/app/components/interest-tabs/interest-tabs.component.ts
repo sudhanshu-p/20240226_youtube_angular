@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-interest-tabs',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './interest-tabs.component.html',
   styleUrl: './interest-tabs.component.css'
 })
-export class InterestTabsComponent {
 
+export class InterestTabsComponent {
+  @Input() trendingTopics: Array<String> = []
 }
